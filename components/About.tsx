@@ -34,9 +34,9 @@ export default function About() {
               marginBottom: 20,
             }}
           >
-            I&apos;m a Computer Science graduate from Virginia Tech with a passion for building
-            intelligent systems that solve real-world problems. My work spans machine learning
-            research, full-stack development, and AI-powered applications.
+            I&apos;m an AI Engineer focused on building intelligent, scalable systems that solve
+            real-world problems. I work at the intersection of machine learning and software
+            engineering, developing solutions that improve accessibility and learning experiences.
           </p>
         </FadeIn>
 
@@ -48,9 +48,10 @@ export default function About() {
               lineHeight: 1.8,
             }}
           >
-            I&apos;m especially interested in the intersection of AI and product — building tools
-            that are not just technically sound but genuinely useful. Currently focused on backend
-            engineering at Spirit AI while exploring new projects in ML and generative AI.
+            My work includes AI research on indoor navigation for visually impaired users and
+            building interactive systems that teach sustainable farming through aquaponics.
+            I&apos;m curious, detail-oriented, and always exploring how AI can be applied to
+            create meaningful impact.
           </p>
         </FadeIn>
       </div>

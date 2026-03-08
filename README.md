@@ -1,3 +1,3 @@
 # Moeez Ahmad — Portfolio
 
-Personal portfolio website built with Next.js, TypeScript, and Tailwind CSS.
+I'm Moeez, an AI Engineer focused on building intelligent, scalable systems that solve real-world problems. I work at the intersection of machine learning and software engineering, developing solutions that improve accessibility and learning experiences. My work includes AI research on indoor navigation for visually impaired users and building interactive systems that teach sustainable farming through aquaponics. I'm curious, detail-oriented, and always exploring how AI can be applied to create meaningful impact.
