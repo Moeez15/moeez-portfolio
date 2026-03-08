@@ -48,10 +48,23 @@ export default function About() {
               lineHeight: 1.8,
             }}
           >
-            My work includes AI research on indoor navigation for visually impaired users and
-            building interactive systems that teach sustainable farming through aquaponics.
-            I&apos;m curious, detail-oriented, and always exploring how AI can be applied to
-            create meaningful impact.
+            My experience includes AI research on indoor navigation for visually impaired users,
+            building interactive systems that teach sustainable farming through aquaponics, and
+            working as a Backend Software Engineer at Spirit AI, where I contribute to building
+            AI-driven backend systems.
+          </p>
+        </FadeIn>
+
+        <FadeIn delay={0.3}>
+          <p
+            style={{
+              color: '#9CA3AF',
+              fontSize: 17,
+              lineHeight: 1.8,
+            }}
+          >
+            I&apos;m curious, detail-oriented, and driven by impact, always exploring how AI can
+            be applied to create meaningful and practical solutions.
           </p>
         </FadeIn>
       </div>
