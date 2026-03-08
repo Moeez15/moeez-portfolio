@@ -83,26 +83,14 @@ export default function Projects() {
                   ))}
                 </div>
 
-                {/* Bullets */}
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0, flex: 1 }}>
-                  {project.bullets.map((bullet, bi) => (
-                    <li
-                      key={bi}
-                      style={{
-                        color: '#9CA3AF',
-                        fontSize: 14,
-                        lineHeight: 1.7,
-                        display: 'flex',
-                        alignItems: 'flex-start',
-                        gap: 8,
-                        marginBottom: 4,
-                      }}
-                    >
-                      <span style={{ color: '#6366F1', flexShrink: 0 }}>›</span>
-                      {bullet}
-                    </li>
-                  ))}
-                </ul>
+                {/* Description */}
+                {project.description && (
+                  <p style={{ color: '#9CA3AF', fontSize: 14, lineHeight: 1.7, marginBottom: 14, flex: 1 }}>
+                    {project.description}
+                  </p>
+                )}
+
+                <div style={{ flex: 1 }} />
 
                 {/* Links Footer */}
                 <div
