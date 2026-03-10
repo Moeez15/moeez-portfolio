@@ -42,7 +42,7 @@ export const EXPERIENCES: Experience[] = [
     date: "Aug – Dec 2025",
     bullets: [
       "Supported 100+ students in database concepts, including ER modeling, relational design, and SQL querying",
-      "Lead discussions and debugging sessions to resolve SQL and database management issues",
+      "Led discussions and debugging sessions to resolve SQL and database management issues",
       "Guided students through complex database design and implementation challenges during office hours",
     ],
   },
