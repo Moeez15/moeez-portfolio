@@ -71,7 +71,7 @@ export default function Hero() {
                 fontWeight: 400,
               }}
             >
-              AI Engineer · Startup Enthusiast
+              Software Engineer · Startup Enthusiast
             </p>
 
             <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>

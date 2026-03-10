@@ -34,7 +34,7 @@ export default function About() {
               marginBottom: 20,
             }}
           >
-            I&apos;m an AI Engineer focused on building intelligent, scalable systems that solve
+            I&apos;m a Software Engineer focused on building intelligent, scalable systems that solve
             real-world problems. I work at the intersection of machine learning and software
             engineering, developing solutions that enhance user experiences and drive impact.
           </p>
