@@ -34,9 +34,9 @@ export default function About() {
               marginBottom: 20,
             }}
           >
-            I&apos;m a Software Engineer focused on building intelligent, scalable systems that solve
-            real-world problems. I work at the intersection of machine learning and software
-            engineering, developing solutions that enhance user experiences and drive impact.
+            I&apos;m a software engineer focused on Applied AI and full-stack development, interested
+            in building software systems that solve real-world problems. I enjoy turning AI models
+            into real, usable products and bridging the gap between research and practical applications.
           </p>
         </FadeIn>
 
@@ -48,10 +48,8 @@ export default function About() {
               lineHeight: 1.8,
             }}
           >
-            My experience includes AI research on indoor navigation for visually impaired users,
-            building interactive systems that teach sustainable farming through aquaponics, and
-            working as a Backend Software Engineer at Spirit AI, where I contribute to building
-            AI-driven backend systems.
+            My experience includes AI research on indoor navigation for visually impaired users and
+            building interactive systems that teach sustainable farming through aquaponics.
           </p>
         </FadeIn>
 
@@ -63,8 +61,8 @@ export default function About() {
               lineHeight: 1.8,
             }}
           >
-            I&apos;m curious, detail-oriented, and driven by impact, always exploring how AI can
-            be applied to create meaningful and practical solutions.
+            I&apos;m curious, detail-oriented, and driven by impact. I value a growth mindset and
+            am always looking to learn, improve, and explore new technologies.
           </p>
         </FadeIn>
       </div>
