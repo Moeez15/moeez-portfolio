@@ -46,6 +46,7 @@ export default function About() {
               color: '#9CA3AF',
               fontSize: 17,
               lineHeight: 1.8,
+              marginBottom: 20,
             }}
           >
             My experience includes AI research on indoor navigation for visually impaired users and
