@@ -7,13 +7,13 @@ export interface Experience {
 
 export const EXPERIENCES: Experience[] = [
   {
-    title: "Product Manager",
+    title: "AI Engineer",
     org: "Wakao Technologies",
     date: "May 2026 – Present",
     bullets: [
-      "Developing AI agents to automate B2B outreach and CRM workflows targeting businesses and community",
-      "Running growth experiments and tracking CRM metrics to optimize user acquisition and outreach conversion rates",
-      "Collaborating with leadership to build scalable growth systems and delivering weekly reports on results and insights",
+      "Developing AI agents to automate B2B outreach, lead qualification, and CRM workflows for business acquisition",
+      "Building data scraping pipelines to collect emails, phone numbers, and social profiles for outreach campaigns",
+      "Designing outreach automation systems integrating AI agents with CRM tools for lead generation",
     ],
   },
   {
