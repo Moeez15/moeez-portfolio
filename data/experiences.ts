@@ -7,23 +7,33 @@ export interface Experience {
 
 export const EXPERIENCES: Experience[] = [
   {
-    title: "Software Developer",
-    org: "Virginia Tech Visionarium Lab",
-    date: "Aug – Dec 2025",
+    title: "Product Manager",
+    org: "Wakao Technologies",
+    date: "May 2026 – Present",
     bullets: [
-      "Developed RESTful backend APIs for an aquaponics simulation web application using Node.js and Express.js, enabling dynamic interactions between fish, plant, and water systems and supporting seamless frontend integration",
-      "Designed and optimized relational database schemas in PostgreSQL, improving query efficiency by 15% and ensuring reliable storage and retrieval of simulation data under concurrent usage",
-      "Conducted end-to-end testing of API endpoints using automated validation scripts, improving backend reliability and ensuring consistent performance across multiple user sessions",
+      "Developing AI agents to automate B2B outreach and CRM workflows targeting businesses and community",
+      "Running growth experiments and tracking CRM metrics to optimize user acquisition and outreach conversion rates",
+      "Collaborating with leadership to build scalable growth systems and delivering weekly reports on results and insights",
     ],
   },
   {
-    title: "ML Research Assistant",
+    title: "Software Engineer",
+    org: "Virginia Tech Visionarium Lab",
+    date: "Aug – Dec 2025",
+    bullets: [
+      "Developed RESTful backend APIs using Node.js and Express.js for an aquaponics app, serving data to frontend",
+      "Optimized PostgreSQL database schemas with normalization and indexing, reducing query response time by 15%",
+      "Implemented automated API tests using Jest, achieving 95% endpoint coverage and improving backend reliability",
+    ],
+  },
+  {
+    title: "Machine Learning Research Assistant",
     org: "Virginia Tech CS",
     date: "Jan – Aug 2025",
     bullets: [
-      "Improved indoor navigation for visually impaired users by 25% via SmartGuide, integrating semantic segmentation, depth estimation, and feature tracking to build a computer vision pipeline trained on 50,000 images",
-      "Trained a YOLOv12 object detection model in PyTorch on the large-scale dataset, focusing on detecting dynamic indoor objects such as furniture, obstacles, and people, while improving inference speed for real-time applications",
-      "Achieved a 12% increase in precision and 21% improvement in recall, significantly boosting model accuracy and reliability for real-time navigation in complex indoor environments",
+      "Built SmartGuide, a real-time computer vision pipeline for indoor navigation for visually impaired users, combining semantic segmentation, depth estimation, and feature tracking across a 50,000-image dataset",
+      "Trained and fine-tuned a YOLOv12 object detection model in PyTorch to detect indoor obstacles in real time",
+      "Achieved a 12% increase in precision and 21% improvement in recall, reducing missed obstacle detections and improving navigation reliability by 25% in complex indoor environments",
     ],
   },
   {

@@ -9,27 +9,35 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
-    name: "InvestQuest",
-    description: "A gamified stock-market learning app that lets users simulate trading with quests and leveling to boost engagement. Integrated machine learning models for real-time trend and risk predictions, and interactive visualizations for quick portfolio insights.",
-    tech: ["Python", "FastAPI", "MySQL", "scikit-learn", "Keras", "Docker"],
-    bullets: [
-      "Built a gamified stock-market learning app with Python, FastAPI, and MySQL, enabling simulated trading and boosting user engagement by 30% through quests and leveling features",
-      "Integrated ML models (Random Forest + LSTM) using scikit-learn and Keras to provide real-time trend and risk predictions, improving accuracy by 18%",
-      "Implemented interactive data visualizations with Matplotlib and pandas to display portfolio performance and risk insights, reducing user analysis time by 40%",
-    ],
+    name: "onthefly",
+    description: "A full-stack travel planner that turns scattered trip ideas into structured itineraries — letting users map out destinations, build day-by-day plans, and keep every booking, note, and stop in one place.",
+    tech: ["Node.js", "Express.js", "React", "PostgreSQL", "SQL"],
+    bullets: [],
     liveUrl: null,
-    githubUrl: "https://github.com/Moeez15/InvestQuest",
+    githubUrl: "https://github.com/Moeez15/onthefly",
   },
   {
-    name: "TravelMate",
-    description: "An AI travel assistant that translates 20+ languages in real-time and delivers personalized restaurant, attraction, and activity recommendations, reducing trip planning time by 30%.",
-    tech: ["Node.js", "Express.js", "React.js", "GPT-4", "LangChain"],
-    bullets: [
-      "Built an AI travel assistant translating 20+ languages in real-time, enabling seamless communication abroad",
-      "Delivered personalized restaurant, attraction, and activity recommendations for 1000+ users using local data",
-      "Integrated AI models and APIs to create a responsive web experience, reducing planning time by 30%",
-    ],
+    name: "unearthed",
+    description: "A community-driven gift discovery platform where users share and curate thoughtful gift ideas, filtered by recipient, occasion, and budget — turning crowdsourced taste into personalized recommendations.",
+    tech: ["JavaScript", "React", "Node.js", "Express.js", "PostgreSQL", "SQL"],
+    bullets: [],
     liveUrl: null,
-    githubUrl: "https://github.com/Moeez15/TravelMate",
+    githubUrl: "https://github.com/Moeez15/unearthed",
+  },
+  {
+    name: "PawPal",
+    description: "An AI-powered pet care companion that builds personalized care routines, tracks feeding, grooming, and vet schedules, and uses Claude to answer pet-specific questions in natural language.",
+    tech: ["Python", "Streamlit", "pytest", "Claude API"],
+    bullets: [],
+    liveUrl: null,
+    githubUrl: "https://github.com/Moeez15/PawPal",
+  },
+  {
+    name: "DocuBot",
+    description: "A retrieval-augmented documentation assistant that ingests user-uploaded project docs and answers technical questions with grounded, source-cited responses — eliminating hallucinations by anchoring every reply to the underlying content.",
+    tech: ["Python", "Flask", "React", "RAG", "Gemini API"],
+    bullets: [],
+    liveUrl: null,
+    githubUrl: "https://github.com/Moeez15/DocuBot",
   },
 ];
