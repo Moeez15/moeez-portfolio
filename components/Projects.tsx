@@ -63,38 +63,10 @@ export default function Projects() {
                   {project.name}
                 </h3>
 
-                {/* Tech Tags */}
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 16 }}>
-                  {project.tech.map((tech) => (
-                    <span
-                      key={tech}
-                      className="font-mono"
-                      style={{
-                        background: 'rgba(34,211,238,0.08)',
-                        border: '1px solid rgba(34,211,238,0.2)',
-                        borderRadius: 4,
-                        padding: '2px 8px',
-                        fontSize: 11,
-                        color: '#22D3EE',
-                      }}
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-
-                {/* Bullets or Description */}
-                {project.bullets && project.bullets.length > 0 ? (
-                  <ul style={{ color: '#9CA3AF', fontSize: 14, lineHeight: 1.7, marginBottom: 14, paddingLeft: 16, flex: 1 }}>
-                    {project.bullets.map((bullet, i) => (
-                      <li key={i} style={{ marginBottom: 6 }}>{bullet}</li>
-                    ))}
-                  </ul>
-                ) : project.description ? (
-                  <p style={{ color: '#9CA3AF', fontSize: 14, lineHeight: 1.7, marginBottom: 14, flex: 1 }}>
-                    {project.description}
-                  </p>
-                ) : null}
+                {/* Description */}
+                <p style={{ color: '#9CA3AF', fontSize: 14, lineHeight: 1.7, marginBottom: 14, flex: 1 }}>
+                  {project.description}
+                </p>
 
                 <div style={{ flex: 1 }} />
 

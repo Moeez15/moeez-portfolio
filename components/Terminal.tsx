@@ -26,9 +26,7 @@ I'm a software engineer focused on Applied AI and full-stack development, intere
 5. SWAT Technician @ VT CoE (Jan 2024 – Sep 2025)`,
   projects: `onthefly  — Full-stack travel planner with real-time collaboration
 FitFindr  — AI outfit recommendation agent with planning loop
-unearthed — Community-driven gift discovery platform
-PawPal    — AI-powered pet care scheduler
-DocuBot   — RAG-based documentation assistant`,
+unearthed — Community-driven gift discovery platform`,
   skills: `Languages:  Python, JavaScript, TypeScript, Java, C, SQL, HTML/CSS
 Frameworks: PyTorch, React.js, Next.js, Node.js, Express.js, LangGraph, LangChain, Tailwind CSS
 Libraries:  pandas, NumPy, scikit-learn, Keras, Matplotlib
