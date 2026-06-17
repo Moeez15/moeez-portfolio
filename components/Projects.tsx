@@ -83,12 +83,18 @@ export default function Projects() {
                   ))}
                 </div>
 
-                {/* Description */}
-                {project.description && (
+                {/* Bullets or Description */}
+                {project.bullets && project.bullets.length > 0 ? (
+                  <ul style={{ color: '#9CA3AF', fontSize: 14, lineHeight: 1.7, marginBottom: 14, paddingLeft: 16, flex: 1 }}>
+                    {project.bullets.map((bullet, i) => (
+                      <li key={i} style={{ marginBottom: 6 }}>{bullet}</li>
+                    ))}
+                  </ul>
+                ) : project.description ? (
                   <p style={{ color: '#9CA3AF', fontSize: 14, lineHeight: 1.7, marginBottom: 14, flex: 1 }}>
                     {project.description}
                   </p>
-                )}
+                ) : null}
 
                 <div style={{ flex: 1 }} />
 

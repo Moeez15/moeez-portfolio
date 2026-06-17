@@ -10,11 +10,27 @@ export interface Project {
 export const PROJECTS: Project[] = [
   {
     name: "onthefly",
-    description: "A full-stack travel planner that turns scattered trip ideas into structured itineraries — letting users map out destinations, build day-by-day plans, and keep every booking, note, and stop in one place.",
-    tech: ["Node.js", "Express.js", "React", "PostgreSQL", "SQL"],
-    bullets: [],
+    description: "",
+    tech: ["JavaScript", "Node.js", "Express.js", "React", "PostgreSQL", "SQL", "Git"],
+    bullets: [
+      "Built a full-stack travel planning app enabling users to create trips, browse destinations and organize itineraries",
+      "Developed a RESTful Express API with controllers/routers for trip management and browsing destinations",
+      "Implemented GitHub OAuth with Passport.js and a normalized PostgreSQL schema to support relational trip data",
+    ],
     liveUrl: null,
     githubUrl: "https://github.com/Moeez15/onthefly",
+  },
+  {
+    name: "FitFindr",
+    description: "",
+    tech: ["Python", "Gradio", "Groq API"],
+    bullets: [
+      "Built an AI agent that searches listings, matches outfits, and generates fit cards from natural language requests",
+      "Designed a planning loop that selects tools based on prior results, passing state across calls without user re-entry",
+      "Implemented per-tool error handling and fallback messaging for empty or invalid results for all three tools",
+    ],
+    liveUrl: null,
+    githubUrl: null,
   },
   {
     name: "unearthed",

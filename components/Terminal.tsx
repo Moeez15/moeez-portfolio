@@ -19,19 +19,20 @@ const COMMANDS: Record<string, string> = {
   about: `Moeez Ahmad - Software Engineer
 Virginia Tech CS Graduate (Dec 2025)
 I'm a software engineer focused on Applied AI and full-stack development, interested in building software systems that solve real-world problems. I enjoy turning AI models into real, usable products and am currently seeking full-time roles in Applied AI or Software Engineering. I value a growth mindset and am always curious to learn and improve.`,
-  experience: `1. AI Engineer @ Wakao Technologies (May 2026 – Present)
+  experience: `1. Software Engineer @ South Asian Business Council Of Virginia (May 2026 – Present)
 2. Software Engineer @ VT Visionarium Lab (Aug–Dec 2025)
 3. ML Research Assistant @ VT CS (Jan–Aug 2025)
 4. Undergraduate TA @ VT CS (Aug–Dec 2025)
 5. SWAT Technician @ VT CoE (Jan 2024 – Sep 2025)`,
-  projects: `onthefly  — Full-stack travel planner (Node.js, Express, React, PostgreSQL)
+  projects: `onthefly  — Full-stack travel planner (JavaScript, Node.js, Express, React, PostgreSQL)
+FitFindr  — AI outfit agent with planning loop (Python, Gradio, Groq API)
 unearthed — Community gift discovery platform (React, Node.js, PostgreSQL)
 PawPal    — AI pet care scheduler (Python, Streamlit, Claude API)
 DocuBot   — RAG documentation assistant (Python, Flask, React, Gemini API)`,
-  skills: `Languages:  Java, Python, C, SQL, JavaScript, HTML/CSS
-Frameworks: PyTorch, React.js, Node.js, Express.js
-Tools:      Git, Docker, Linux, MySQL, MongoDB
-Libraries:  pandas, NumPy, scikit-learn, Keras`,
+  skills: `Languages:  Python, JavaScript, TypeScript, Java, C, SQL, HTML/CSS
+Frameworks: PyTorch, React.js, Next.js, Node.js, Express.js, LangGraph, LangChain, Tailwind CSS
+Libraries:  pandas, NumPy, scikit-learn, Keras, Matplotlib
+Tools:      Git, Docker, Kubernetes, AWS, Azure, Linux, Pinecone, MySQL, PostgreSQL, MongoDB, VS Code`,
   education: `Virginia Tech — BS Computer Science
 Blacksburg, VA | GPA: 3.58 / 4.0 | Dec 2025`,
   contact: `Email:    moeez0915@gmail.com
