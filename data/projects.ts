@@ -16,7 +16,7 @@ export const PROJECTS: Project[] = [
     name: "FitFindr",
     description: "An AI-powered outfit recommendation agent that searches listings, matches outfits, and generates fit cards from natural language requests. Uses a planning loop that selects tools based on prior results, passing state across calls without user re-entry.",
     liveUrl: null,
-    githubUrl: "https://github.com/Moeez15/FitFindr",
+    githubUrl: "https://github.com/Moeez15/fit_findr",
   },
   {
     name: "unearthed",
