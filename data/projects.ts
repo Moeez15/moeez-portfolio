@@ -9,7 +9,7 @@ export const PROJECTS: Project[] = [
   {
     name: "onthefly",
     description: "A full-stack travel planning app that lets users create trips, browse destinations, and organize itineraries with real-time collaboration. Features GitHub OAuth authentication and a normalized relational database for managing trip data.",
-    liveUrl: null,
+    liveUrl: "https://client-zlcr.onrender.com/",
     githubUrl: "https://github.com/Moeez15/onthefly",
   },
   {
