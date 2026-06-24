@@ -13,15 +13,27 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com/Moeez15/onthefly",
   },
   {
-    name: "FitFindr",
-    description: "An AI-powered outfit recommendation agent that searches listings, matches outfits, and generates fit cards from natural language requests. Uses a planning loop that selects tools based on prior results, passing state across calls without user re-entry.",
-    liveUrl: null,
-    githubUrl: "https://github.com/Moeez15/fit_findr",
-  },
-  {
     name: "unearthed",
     description: "A community-driven gift discovery platform where users share and curate thoughtful gift ideas, filtered by recipient, occasion, and budget — turning crowdsourced taste into personalized recommendations.",
     liveUrl: null,
     githubUrl: "https://github.com/Moeez15/unearthed",
+  },
+  {
+    name: "plantAdvisor",
+    description: "A conversational agent that helps users care for their houseplants.",
+    liveUrl: null,
+    githubUrl: "https://github.com/Moeez15/plant-advisor",
+  },
+  {
+    name: "rulesBot",
+    description: "RulesBot answers natural language questions about board game rules using a RAG pipeline.",
+    liveUrl: null,
+    githubUrl: "https://github.com/Moeez15/rulesbot",
+  },
+  {
+    name: "FitFindr",
+    description: "An AI-powered outfit recommendation agent that searches listings, matches outfits, and generates fit cards from natural language requests. Uses a planning loop that selects tools based on prior results, passing state across calls without user re-entry.",
+    liveUrl: null,
+    githubUrl: "https://github.com/Moeez15/fit_findr",
   },
 ];
