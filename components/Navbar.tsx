@@ -91,7 +91,7 @@ export default function Navbar() {
             </button>
           ))}
           <a
-            href="/resume.pdf"
+            href="/Moeez_Ahmad_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             style={{
