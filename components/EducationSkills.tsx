@@ -65,26 +65,7 @@ export default function EducationSkills() {
                 Bachelor of Science in Computer Science
               </p>
 
-              {/* GPA Badge */}
-              <div
-                style={{
-                  display: 'inline-block',
-                  background: 'rgba(99,102,241,0.15)',
-                  border: '1px solid rgba(99,102,241,0.3)',
-                  borderRadius: 8,
-                  padding: '4px 12px',
-                  marginBottom: 8,
-                }}
-              >
-                <span
-                  className="font-mono"
-                  style={{ color: '#6366F1', fontSize: 13, fontWeight: 600 }}
-                >
-                  GPA: 3.58 / 4.0
-                </span>
-              </div>
-
-              <p
+<p
                 className="font-mono"
                 style={{ color: '#9CA3AF', fontSize: 12, display: 'block', marginTop: 8 }}
               >
