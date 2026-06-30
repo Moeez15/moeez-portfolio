@@ -1,7 +1,6 @@
 import ParticleCanvas from '@/components/ParticleCanvas';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import Terminal from '@/components/Terminal';
 import About from '@/components/About';
 import EducationSkills from '@/components/EducationSkills';
 import Experience from '@/components/Experience';
@@ -17,7 +16,6 @@ export default function Home() {
         <Navbar />
         <main>
           <Hero />
-          <Terminal />
           <About />
           <EducationSkills />
           <Experience />

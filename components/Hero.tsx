@@ -71,7 +71,7 @@ export default function Hero() {
                 fontWeight: 400,
               }}
             >
-              Software Engineer · Startup Enthusiast
+              Software Engineer · Applied AI &amp; Full-Stack
             </p>
 
             <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
@@ -87,6 +87,26 @@ export default function Hero() {
               >
                 View Projects
               </button>
+              <a
+                href="/resume.pdf"
+                download
+                className="btn-outline"
+                style={{
+                  textDecoration: 'none',
+                  borderColor: '#6366F1',
+                  color: '#6366F1',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: 8,
+                }}
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                Resume
+              </a>
             </div>
           </div>
         </FadeIn>

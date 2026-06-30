@@ -1,7 +1,54 @@
 'use client';
 
 import FadeIn from './FadeIn';
-import { PROJECTS } from '@/data/projects';
+
+const PROJECTS = [
+  {
+    name: 'onthefly',
+    accent: '#6366F1',
+    description:
+      'A full-stack travel planning app that lets users create trips, browse destinations, and organize itineraries with real-time collaboration. Features GitHub OAuth authentication and a normalized relational database.',
+    tags: ['React', 'Node.js', 'PostgreSQL', 'GitHub OAuth'],
+    githubUrl: 'https://github.com/Moeez15/onthefly',
+    liveUrl: 'https://client-zlcr.onrender.com/',
+  },
+  {
+    name: 'FitFindr',
+    accent: '#EC4899',
+    description:
+      'An AI-powered outfit recommendation agent that searches listings, matches outfits, and generates fit cards from natural language requests — using a planning loop that selects tools based on prior results.',
+    tags: ['Python', 'LangGraph', 'AI Agents', 'Tool Use'],
+    githubUrl: 'https://github.com/Moeez15/fit_findr',
+    liveUrl: null,
+  },
+  {
+    name: 'unearthed',
+    accent: '#22D3EE',
+    description:
+      'A community-driven gift discovery platform where users share and curate thoughtful gift ideas, filtered by recipient, occasion, and budget — turning crowdsourced taste into personalized recommendations.',
+    tags: ['React', 'Node.js', 'PostgreSQL'],
+    githubUrl: 'https://github.com/Moeez15/unearthed',
+    liveUrl: null,
+  },
+  {
+    name: 'rulesBot',
+    accent: '#F59E0B',
+    description:
+      'A RAG-powered chatbot that answers natural language questions about board game rules using vector search to retrieve relevant rule passages instantly.',
+    tags: ['Python', 'RAG', 'LangChain', 'Pinecone'],
+    githubUrl: 'https://github.com/Moeez15/rulesbot',
+    liveUrl: null,
+  },
+  {
+    name: 'plantAdvisor',
+    accent: '#10B981',
+    description:
+      'A conversational agent that helps users care for their houseplants — identifying species, diagnosing issues, and providing personalized care guidance.',
+    tags: ['Python', 'LangChain', 'OpenAI'],
+    githubUrl: 'https://github.com/Moeez15/plant-advisor',
+    liveUrl: null,
+  },
+];
 
 export default function Projects() {
   return (
@@ -33,109 +80,133 @@ export default function Projects() {
           }}
         >
           {PROJECTS.map((project, index) => (
-            <FadeIn key={project.name} delay={index * 0.1}>
+            <FadeIn key={project.name} delay={index * 0.08}>
               <div
-                className="card"
                 style={{
                   height: '100%',
                   display: 'flex',
                   flexDirection: 'column',
+                  background: 'rgba(255,255,255,0.04)',
+                  border: '1px solid rgba(255,255,255,0.08)',
+                  borderRadius: 16,
+                  overflow: 'hidden',
                   transition: 'transform 0.2s ease, border-color 0.2s ease',
                 }}
                 onMouseEnter={(e) => {
                   (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-4px)';
-                  (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(99,102,241,0.4)';
+                  (e.currentTarget as HTMLDivElement).style.borderColor = project.accent + '66';
                 }}
                 onMouseLeave={(e) => {
                   (e.currentTarget as HTMLDivElement).style.transform = 'translateY(0)';
                   (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(255,255,255,0.08)';
                 }}
               >
-                {/* Project Name */}
-                <h3
-                  style={{
-                    fontSize: 20,
-                    fontWeight: 700,
-                    color: '#E5E7EB',
-                    marginBottom: 12,
-                  }}
-                >
-                  {project.name}
-                </h3>
-
-                {/* Description */}
-                <p style={{ color: '#9CA3AF', fontSize: 14, lineHeight: 1.7, marginBottom: 14, flex: 1 }}>
-                  {project.description}
-                </p>
-
-                <div style={{ flex: 1 }} />
-
-                {/* Links Footer */}
+                {/* Colored accent bar */}
                 <div
                   style={{
-                    display: 'flex',
-                    gap: 12,
-                    marginTop: 20,
-                    paddingTop: 16,
-                    borderTop: '1px solid rgba(255,255,255,0.08)',
+                    height: 4,
+                    background: project.accent,
+                    flexShrink: 0,
                   }}
-                >
-                  {project.githubUrl && (
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: 6,
-                        color: '#9CA3AF',
-                        fontSize: 13,
-                        textDecoration: 'none',
-                        transition: 'color 0.2s ease',
-                      }}
-                      onMouseEnter={(e) => {
-                        (e.currentTarget as HTMLAnchorElement).style.color = '#E5E7EB';
-                      }}
-                      onMouseLeave={(e) => {
-                        (e.currentTarget as HTMLAnchorElement).style.color = '#9CA3AF';
-                      }}
-                    >
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
-                      </svg>
-                      GitHub
-                    </a>
-                  )}
-                  {project.liveUrl && (
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: 6,
-                        color: '#9CA3AF',
-                        fontSize: 13,
-                        textDecoration: 'none',
-                        transition: 'color 0.2s ease',
-                      }}
-                      onMouseEnter={(e) => {
-                        (e.currentTarget as HTMLAnchorElement).style.color = '#22D3EE';
-                      }}
-                      onMouseLeave={(e) => {
-                        (e.currentTarget as HTMLAnchorElement).style.color = '#9CA3AF';
-                      }}
-                    >
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                        <polyline points="15 3 21 3 21 9" />
-                        <line x1="10" y1="14" x2="21" y2="3" />
-                      </svg>
-                      Live Demo
-                    </a>
-                  )}
+                />
+
+                <div style={{ padding: 24, display: 'flex', flexDirection: 'column', flex: 1 }}>
+                  {/* Project Name */}
+                  <h3
+                    style={{
+                      fontSize: 18,
+                      fontWeight: 700,
+                      color: '#E5E7EB',
+                      marginBottom: 10,
+                    }}
+                  >
+                    {project.name}
+                  </h3>
+
+                  {/* Description */}
+                  <p style={{ color: '#9CA3AF', fontSize: 14, lineHeight: 1.7, marginBottom: 16, flex: 1 }}>
+                    {project.description}
+                  </p>
+
+                  {/* Tech Tags */}
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 16 }}>
+                    {project.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="font-mono"
+                        style={{
+                          background: project.accent + '18',
+                          border: `1px solid ${project.accent}44`,
+                          color: project.accent,
+                          borderRadius: 6,
+                          padding: '2px 8px',
+                          fontSize: 11,
+                          fontWeight: 500,
+                        }}
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* Links */}
+                  <div
+                    style={{
+                      display: 'flex',
+                      gap: 12,
+                      paddingTop: 14,
+                      borderTop: '1px solid rgba(255,255,255,0.08)',
+                    }}
+                  >
+                    {project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: 6,
+                          color: '#9CA3AF',
+                          fontSize: 13,
+                          textDecoration: 'none',
+                          transition: 'color 0.2s ease',
+                        }}
+                        onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = '#E5E7EB'; }}
+                        onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = '#9CA3AF'; }}
+                      >
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                        </svg>
+                        GitHub
+                      </a>
+                    )}
+                    {project.liveUrl && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: 6,
+                          color: '#9CA3AF',
+                          fontSize: 13,
+                          textDecoration: 'none',
+                          transition: 'color 0.2s ease',
+                        }}
+                        onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = '#22D3EE'; }}
+                        onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = '#9CA3AF'; }}
+                      >
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                          <polyline points="15 3 21 3 21 9" />
+                          <line x1="10" y1="14" x2="21" y2="3" />
+                        </svg>
+                        Live Demo
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             </FadeIn>

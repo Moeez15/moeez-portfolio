@@ -66,7 +66,7 @@ export default function Navbar() {
         </button>
 
         {/* Desktop Links */}
-        <div style={{ display: 'flex', gap: 32 }} className="hidden sm:flex">
+        <div style={{ display: 'flex', alignItems: 'center', gap: 32 }} className="hidden sm:flex">
           {NAV_LINKS.map((link) => (
             <button
               key={link.id}
@@ -90,6 +90,28 @@ export default function Navbar() {
               {link.label}
             </button>
           ))}
+          <a
+            href="/resume.pdf"
+            download
+            style={{
+              border: '1px solid #6366F1',
+              color: '#6366F1',
+              borderRadius: 6,
+              padding: '6px 16px',
+              fontSize: 14,
+              fontWeight: 500,
+              textDecoration: 'none',
+              transition: 'all 0.2s ease',
+            }}
+            onMouseEnter={(e) => {
+              (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(99,102,241,0.1)';
+            }}
+            onMouseLeave={(e) => {
+              (e.currentTarget as HTMLAnchorElement).style.background = 'transparent';
+            }}
+          >
+            Resume
+          </a>
         </div>
 
         {/* Mobile Hamburger */}
