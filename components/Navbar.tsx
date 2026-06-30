@@ -92,7 +92,8 @@ export default function Navbar() {
           ))}
           <a
             href="/resume.pdf"
-            download
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
               border: '1px solid #6366F1',
               color: '#6366F1',

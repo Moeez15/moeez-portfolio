@@ -89,7 +89,8 @@ export default function Hero() {
               </button>
               <a
                 href="/resume.pdf"
-                download
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-outline"
                 style={{
                   textDecoration: 'none',
