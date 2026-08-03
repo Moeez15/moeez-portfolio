@@ -10,7 +10,7 @@ const PROJECTS = [
       'A full-stack travel planning app that lets users create trips, browse destinations, and organize itineraries with real-time collaboration. Features GitHub OAuth authentication and a normalized relational database.',
     tags: ['React', 'Node.js', 'PostgreSQL', 'GitHub OAuth'],
     githubUrl: 'https://github.com/Moeez15/onthefly',
-    liveUrl: 'https://client-zlcr.onrender.com/',
+    liveUrl: 'https://onthefly-ai.up.railway.app/',
   },
   {
     name: 'FitFindr',
