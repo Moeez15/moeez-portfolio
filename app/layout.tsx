@@ -1,24 +1,23 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import ScrollReset from "@/components/ScrollReset";
 
-const inter = Inter({
-  variable: "--font-inter",
+const geistSans = Geist({
+  variable: "--font-geist-sans",
   subsets: ["latin"],
   display: "swap",
 });
 
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
   subsets: ["latin"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Moeez Ahmad — Portfolio",
-  description: "AI Engineer & Full-Stack Developer",
-  icons: { icon: [] },
+  title: "Moeez Ahmad — Software Engineer",
+  description:
+    "Moeez Ahmad is a Software Engineer interested in AI, Machine Learning, and Full-Stack Engineering, building capable and trustworthy systems for real-world products.",
 };
 
 export default function RootLayout({
@@ -28,11 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}
-        style={{ backgroundColor: "#0B0B0F", color: "#E5E7EB" }}
-      >
-        <ScrollReset />
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>

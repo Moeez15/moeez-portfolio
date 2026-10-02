@@ -1,6 +1,6 @@
 export const SKILLS: Record<string, string[]> = {
-  Languages: ["Python", "JavaScript", "TypeScript", "Java", "C", "SQL", "HTML/CSS"],
-  Frameworks: ["PyTorch", "React.js", "Next.js", "Node.js", "Express.js", "LangGraph", "LangChain", "Tailwind CSS"],
-  Libraries: ["pandas", "NumPy", "scikit-learn", "keras", "Matplotlib"],
-  "Developer Tools": ["Git", "Docker", "Kubernetes", "AWS", "Azure", "Linux", "Pinecone", "MySQL", "PostgreSQL", "MongoDB", "VS Code"],
+  Languages: ["Python", "Java", "JavaScript", "TypeScript", "SQL", "HTML/CSS"],
+  "Frameworks & Libraries": ["React.js", "Node.js", "Express.js", "Next.js", "LangGraph", "LangChain", "PyTorch"],
+  Databases: ["PostgreSQL", "MySQL", "MongoDB", "Supabase"],
+  "Tools & Platforms": ["AWS", "Git/GitHub", "Docker", "Kubernetes", "Redis"],
 };
